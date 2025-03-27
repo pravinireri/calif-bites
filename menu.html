@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Calif Bites Catering Services</title>
+    <meta name="description" content="Explore our diverse menu featuring authentic African, Italian, and Indian cuisines" />
+    <meta name="author" content="Calif Bites" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Calif<span>Bites</span></a>
+          
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="menu.html" class="nav-link active">Menu</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <button class="nav-close" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" style="height: 50vh;">
+        <div class="container">
+          <div class="hero-content text-center">
+            <h1>Our Menu</h1>
+            <p>Explore our diverse menu offerings across different culinary traditions</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Cuisines Section -->
+      <section class="section">
+        <div class="container text-center">
+          <span class="section-subtitle">Culinary Expertise</span>
+          <h2>Our Specialized Cuisines</h2>
+          <p style="max-width: 800px; margin: 0 auto 3rem;">
+            At Calif Bites, we specialize in three distinct cuisines, each prepared with authentic recipes and traditional techniques. Our menu can be customized based on your event needs and preferences.
+          </p>
+          
+          <div class="services-grid">
+            <div class="service-card animate-on-scroll">
+              <div class="service-image">
+                <img src="images/african-cuisine.png" alt="African Cuisine">
+              </div>
+              <div class="service-content">
+                <h3>African Cuisine</h3>
+                <p>Authentic African dishes prepared with traditional techniques and spices, bringing the rich flavors of the continent to your table.</p>
+              </div>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+              <div class="service-image">
+                <img src="images/italian-cuisine.png" alt="Italian Cuisine">
+              </div>
+              <div class="service-content">
+                <h3>Italian Cuisine</h3>
+                <p>Classic Italian favorites made with authentic recipes and fresh ingredients, offering a taste of Italy at your event.</p>
+              </div>
+            </div>
+            
+            <div class="service-card animate-on-scroll">
+              <div class="service-image">
+                <img src="images/indian-cuisine.png" alt="Indian Cuisine">
+              </div>
+              <div class="service-content">
+                <h3>Indian Cuisine</h3>
+                <p>Flavorful Indian dishes with the perfect balance of spices and aromas, creating an unforgettable culinary journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Menu Items Section -->
+      <section class="section" style="background-color: #f8f9fa;" id="menu-section">
+        <div class="container text-center">
+          <span class="section-subtitle">Menu Options</span>
+          <h2>Sample Menu Items</h2>
+          <p style="max-width: 800px; margin: 0 auto 3rem;">
+            Browse through some of our most popular dishes from each cuisine. All dishes can be customized to suit your taste preferences and dietary requirements.
+          </p>
+          
+          <div class="menu-filters">
+            <button class="filter-btn active" data-cuisine="african">African</button>
+            <button class="filter-btn" data-cuisine="italian">Italian</button>
+            <button class="filter-btn" data-cuisine="indian">Indian</button>
+          </div>
+          
+          <div class="menu-grid" id="menu-items-container">
+            <!-- Menu items will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+      
+      <!-- Packages Section -->
+      <section class="section">
+        <div class="container text-center">
+          <span class="section-subtitle">Our Packages</span>
+          <h2>Catering Packages</h2>
+          <p style="max-width: 800px; margin: 0 auto 3rem;">
+            Choose from our standard packages or contact us for custom options tailored to your specific event requirements.
+          </p>
+          
+          <div class="package-grid">
+            <div class="package-card animate-on-scroll">
+              <div class="package-content">
+                <h3 class="package-title">Basic Package</h3>
+                <p class="package-price">Starting at $25 per person</p>
+                <ul class="package-features">
+                  <li>Choice of 2 main dishes</li>
+                  <li>2 side dishes</li>
+                  <li>Basic buffet setup</li>
+                  <li>Disposable plates & utensils</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+              </div>
+            </div>
+            
+            <div class="package-card animate-on-scroll">
+              <div class="package-popular">Most Popular</div>
+              <div class="package-content">
+                <h3 class="package-title">Premium Package</h3>
+                <p class="package-price">Starting at $40 per person</p>
+                <ul class="package-features">
+                  <li>Choice of 3 main dishes</li>
+                  <li>3 side dishes</li>
+                  <li>Appetizers & dessert</li>
+                  <li>Elegant buffet setup</li>
+                  <li>Standard serving staff</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+              </div>
+            </div>
+            
+            <div class="package-card animate-on-scroll">
+              <div class="package-content">
+                <h3 class="package-title">Luxury Package</h3>
+                <p class="package-price">Starting at $60 per person</p>
+                <ul class="package-features">
+                  <li>Choice of 4 main dishes</li>
+                  <li>4 side dishes</li>
+                  <li>Gourmet appetizers & desserts</li>
+                  <li>Premium plated service</li>
+                  <li>Full serving staff & bartenders</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          
+          <div style="margin-top: 3rem;">
+            <p style="margin-bottom: 1.5rem;">
+              All packages can be customized to your specific needs. Contact us for a personalized quote.
+            </p>
+            <a href="contact.html" class="btn btn-primary">
+              Request Custom Menu
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Dietary Section -->
+      <section class="section" style="background-color: var(--califgreen); color: white;">
+        <div class="container text-center">
+          <h2>Dietary Accommodations</h2>
+          <p style="max-width: 800px; margin: 0 auto 2rem;">
+            We can accommodate various dietary needs including vegetarian, vegan, gluten-free, and more. Please let us know your requirements when planning your event.
+          </p>
+          <a href="contact.html" class="btn btn-white">
+            Discuss Your Needs
+          </a>
+        </div>
+      </section>
+      
+      <!-- Call to Action -->
+      <section class="section">
+        <div class="container text-center">
+          <span class="section-subtitle">Get Started</span>
+          <h2>Ready to Plan Your Menu?</h2>
+          <p style="max-width: 800px; margin: 0 auto 2rem;">
+            Contact us today to discuss your event menu needs and receive a customized catering quote.
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            Contact Us Now
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <div class="footer-logo">Calif<span>Bites</span></div>
+            <p>Exquisite catering services for all types of events, specializing in African, Italian, and Indian cuisines.</p>
+            <div class="social-links">
+              <a href="https://facebook.com/califbites" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/califbites" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://instagram.com/califbites" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://tiktok.com/@califbites" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-links-col">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links-col">
+            <h3 class="footer-heading">Our Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Event Catering</a></li>
+              <li><a href="services.html">Menu Planning</a></li>
+              <li><a href="services.html">Chef Services</a></li>
+              <li><a href="services.html">Equipment Rental</a></li>
+              <li><a href="services.html">Full-Service Setup</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-contact-col">
+            <h3 class="footer-heading">Contact Us</h3>
+            <div class="footer-contact">
+              <i class="fas fa-phone-alt"></i>
+              <span>+254 722 638445</span>
+            </div>
+            <div class="footer-contact">
+              <i class="fas fa-envelope"></i>
+              <span>info@califbites.com</span>
+            </div>
+            <div class="footer-contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Nairobi, Kenya</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="copyright">
+          <p>&copy; <span id="current-year"></span> Calif Bites Catering Services. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
